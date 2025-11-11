@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>College Note Sharing Site</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div id="xp-bar">
+			<span id="xp-number" style="cursor:pointer;">XP: <span id="xp-value">0</span></span>
+		</div>
+	</header>
+	<main>
+		<section id="branching">
+			<h2>Select Your Class</h2>
+			<ul>
+				<li>
+					<span>License</span>
+					<ul>
+						<li>
+							<span>1ère année L1</span>
+							<ul>
+								<li><a href="#" class="end-branch" data-class="1ere-annee-l1">Go to Notes</a></li>
+							</ul>
+						</li>
+						<li>
+							<span>2ème année L1</span>
+							<ul>
+								<li><a href="#" class="end-branch" data-class="2eme-annee-l1">Go to Notes</a></li>
+							</ul>
+						</li>
+						<li>
+							<span>3ème année L3</span>
+							<ul>
+								<li><a href="#" class="end-branch" data-class="3eme-annee-l3">Go to Notes</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section id="xp-details" style="display:none;">
+			<h2>Your XP Details</h2>
+			<div>
+				<h3>Notes You Shared</h3>
+				<ul id="shared-notes">
+					<!-- List of shared notes will appear here -->
+				</ul>
+			</div>
+			<div>
+				<h3>Notes You Saved</h3>
+				<ul id="saved-notes">
+					<!-- List of saved notes will appear here -->
+				</ul>
+			</div>
+			<div>
+				<h3>Top 10 Students (Uploads)</h3>
+				<ol id="top-students">
+					<!-- Top 10 students will appear here -->
+				</ol>
+			</div>
+			<button id="back-to-main">Back</button>
+		</section>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>
